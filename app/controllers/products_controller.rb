@@ -1,4 +1,4 @@
-class Api::V1::ProductsController < ApplicationController
+class ProductsController < ApplicationController
 
   def json
     @products = Product.all
@@ -8,7 +8,6 @@ class Api::V1::ProductsController < ApplicationController
 
   def index
     @products = Product.all
-    render json: @products
   end
 
   def new
